@@ -29,7 +29,7 @@
       </br>
       <textarea class="form-control comment-text-area" rows="3" placeholder="Comment"></textarea>
       </br>
-      <button type="button" class="btn btn-success submit-comment-button" style="width:100%">Submit</button>
+      <button type="button" class="btn btn-success submit-comment-button" style="width:100%">Send me your comment!</button>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
