@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
 		
-		var argString = "text=" + $(".comment-text-area").val() + "&name=" + $("#nameInput").val() + "&occ=" + $("#occupationInput").val();
+		var argString = "text=" + encodeURIComponent($(".comment-text-area").val()) + "&name=" + encodeURIComponent($("#nameInput").val()) + "&occ=" + encodeURIComponent($("#occupationInput").val());
 
 		$.ajax({
 		    type: "POST",
