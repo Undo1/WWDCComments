@@ -3,6 +3,8 @@ $(document).ready(function() {
 
 		$(this).html("working...");
 		var button = $(this);
+
+
 		
 		var argString = "text=" + $(".comment-text-area").val() + "&name=" + $("#nameInput").val() + "&occ=" + $("#occupationInput").val();
 
@@ -14,6 +16,9 @@ $(document).ready(function() {
 		 		console.log("success");
 		 		console.log(data);
 		 		button.html("Success! Thank you!")
+		 		$(".comment-text-area").val('');
+		 		$("#nameInput").val('');
+		 		$("#occupationInput").val('');
 			}
 		});
 	});
