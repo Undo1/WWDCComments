@@ -15,4 +15,9 @@
 	$db = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname . ';charset=utf8', $dbuser, $dbpass);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
-	echo 'success';
+	$array = array();
+	foreach($db->query('SELECT * FROM comments') as $row) {
+		$array[] = $row;
+	}
+
+	echo json_encode($array);
