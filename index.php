@@ -17,9 +17,15 @@
     <![endif]-->
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Parker Erway</h1>
+      <h3>WWDC 2014 Comments</h3>
+    </div>
     <div class="container">
       <h1>WWDC 2014 Comments</h1>
-      <p>This is some test text</p>
+      <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+      </br>
+      <button type="button" class="btn btn-success" style="width:100%">Submit</button>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
