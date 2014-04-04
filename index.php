@@ -20,9 +20,9 @@
     <div class="jumbotron">
       <h1>Parker Erway</h1>
       <h3>WWDC 2014 Comments</h3>
+      <p>Leave a comment here about me, and it will show up in my WWDC scholarship app!</p>
     </div>
     <div class="container">
-      <h1>WWDC 2014 Comments</h1>
       <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
       </br>
       <button type="button" class="btn btn-success" style="width:100%">Submit</button>
