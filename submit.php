@@ -9,7 +9,7 @@
 	$db = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname . ';charset=utf8', $dbuser, $dbpass);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$stmt = $db->prepare("INSERT INTO flags(postUrl) VALUES(:postUrl)");
-	$stmt->execute(array(':postUrl' => $question_url));
+	$stmt = $db->prepare("INSERT INTO comments(name,comment,occupation) VALUES(:name, :comment, :occupation)");
+	$stmt->execute(array(':name' => $_POST["name"], ':comment' => $_POST["text"], ':occupation' => $_POST["occ"]));
 
 	echo $_GET["text"];
