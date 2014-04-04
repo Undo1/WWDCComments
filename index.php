@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-color:rgb(252,110,52); color:white">
       <h1>Parker Erway</h1>
       <h3>WWDC 2014 Comments</h3>
       <p>Leave a comment here about me, and it will show up in my WWDC scholarship app!</p>
