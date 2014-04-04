@@ -23,6 +23,10 @@
       <p>Leave a comment here about me, and it will show up in my WWDC scholarship app!</p>
     </div>
     <div class="container">
+      <input type="name" class="form-control" id="nameInput" placeholder="Name">
+      </br>
+      <input type="name" class="form-control" id="occupationInput" placeholder="Occupation">
+      </br>
       <textarea class="form-control comment-text-area" rows="3" placeholder="Comment"></textarea>
       </br>
       <button type="button" class="btn btn-success submit-comment-button" style="width:100%">Submit</button>
