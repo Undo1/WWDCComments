@@ -25,7 +25,7 @@
     <div class="container">
       <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
       </br>
-      <button type="button" class="btn btn-success" style="width:100%">Submit</button>
+      <button type="button" class="btn btn-success submit-comment-button" style="width:100%">Submit</button>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
