@@ -1,7 +1,7 @@
 <?php
 	include '../credentials.php';
 
-	if ($_GET['key'] != FeedbackSubmissionKey())
+	if ($_POST['key'] != FeedbackSubmissionKey())
 	{
 		echo 'ha, nice try';
 		return;
