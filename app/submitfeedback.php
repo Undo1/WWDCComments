@@ -11,7 +11,8 @@
 
 	if (strlen($text) == 0)
 	{
-		return "empty";
+		echo "empty";
+		return;
 	}
 
 	$dbhost = MySQLHost(); // this will ususally be 'localhost', but can sometimes differ  
@@ -26,4 +27,4 @@
 	$stmt->execute(array(':text' => $text));
 	$affected_rows = $stmt->rowCount();
 
-	echo $affected_rows . "added";
+	echo $affected_rows . " added";
