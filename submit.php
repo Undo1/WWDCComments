@@ -6,10 +6,16 @@
 	$dbuser = MySQLUsername(); // the username that you created, or were given, to access your database  
 	$dbpass = MySQLPassword(); // the password that you created, or were given, to access your database
 
+	$text = $_POST["text"];
+
+	if (length($text) == 0)
+	{
+		return "empty";
+	}
+
 	$db = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname . ';charset=utf8', $dbuser, $dbpass);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$stmt = $db->prepare("INSERT INTO comments(name,comment,occupation) VALUES(:name, :comment, :occupation)");
-	$stmt->execute(array(':name' => $_POST["name"], ':comment' => $_POST["text"], ':occupation' => $_POST["occ"]));
-
-	echo $_GET["text"];
+	$stmt = $db->prepare("INSERT INTO feedback(text) VALUES(:text)");
+	$stmt->execute(array(':field1' => $field1));
+	$affected_rows = $stmt->rowCount();
