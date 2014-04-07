@@ -1,5 +1,5 @@
 <?php
-	include 'credentials.php';
+	include '../credentials.php';
 
 	if ($_GET['key'] != FeedbackSubmissionKey())
 	{
