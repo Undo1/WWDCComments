@@ -9,7 +9,7 @@
 
 	$text = $_POST["text"];
 
-	if (length($text) == 0)
+	if (strlen($text) == 0)
 	{
 		return "empty";
 	}
