@@ -9,6 +9,11 @@
 
 	$text = $_POST["text"];
 
+	if (length($text) == 0)
+	{
+		return "empty";
+	}
+
 	echo $text;
 
 	$dbhost = MySQLHost(); // this will ususally be 'localhost', but can sometimes differ  
