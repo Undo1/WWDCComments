@@ -26,4 +26,4 @@
 	$stmt->execute(array(':text' => $text));
 	$affected_rows = $stmt->rowCount();
 
-	echo $affected_rows "added";
+	echo $affected_rows . "added";
