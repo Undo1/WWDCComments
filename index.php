@@ -25,7 +25,7 @@
     <div class="container">
       <input type="name" class="form-control" id="nameInput" placeholder="Name">
       </br>
-      <input type="name" class="form-control" id="occupationInput" placeholder="Occupation">
+      <input type="name" class="form-control" id="occupationInput" placeholder="Occupation (Brick Thrower, Cat Herder, etc.)">
       </br>
       <textarea class="form-control comment-text-area" rows="3" placeholder="Comment"></textarea>
       </br>
