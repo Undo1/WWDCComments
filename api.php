@@ -16,7 +16,7 @@
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$array = array();
-	foreach($db->query('SELECT id, name, comment, occupation, UNIX_TIMESTAMP(timestamp) as timestamp FROM comments where shouldShow=1 order by timestamp desc') as $row) {
+	foreach($db->query('SELECT id, name, comment, occupation, UNIX_TIMESTAMP(timestamp) as timestamp FROM comments where shouldShow=1 order by manualOrder desc, timestamp desc') as $row) {
 		$array[] = $row;
 	}
 
