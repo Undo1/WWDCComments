@@ -18,18 +18,10 @@
   </head>
   <body>
     <div class="jumbotron" style="background-color:rgb(252,110,52); color:white">
-      <h1>Parker Erway</h1>
-      <h3>WWDC 2014 Comments</h3>
-      <p>Leave a comment here about me, and it will show up in my WWDC scholarship app!</p>
+      <h1 style='font-family:"HelveticaNeue"; text-align:center'>Parker Erway</h1>
+      <h3 style='font-family:"HelveticaNeue"; text-align:center'>WWDC 2014 Comments</h3>
     </div>
-    <div class="container">
-      <label for="nameInput">Name:</label><input type="name" class="form-control" id="nameInput" placeholder="Name">
-      </br>
-      <label for="occupationInput">Occupation (Brick Thrower, Cat Herder, etc.):</label><input type="name" class="form-control" id="occupationInput" placeholder="Occupation (Brick Thrower, Cat Herder, etc.)">
-      </br>
-      <label for="comment-text-area">Comment:</label><textarea class="form-control comment-text-area" id="comment-text-area" rows="3" placeholder="Comment"></textarea>
-      </br>
-      <button type="button" class="btn btn-success submit-comment-button" style="width:100%">Send me your comment!</button>
+	<h1 style='line-height:60px; max-width:800px; margin:auto; text-align:center; color:grey; margin-top:90px; font-family:"HelveticaNeue"'>Thanks for your support - I won a <a href='https://developer.apple.com/wwdc/students'>student scholarship</a> to WWDC 2014. I'll be blogging about my experiences <a href='http://www.erwaysoftware.com/wwdcblog'>here</a>.</h1>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
